@@ -1,0 +1,148 @@
+body {
+  font-family: "Arimo", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+@font-face {
+  src: url("../assets/fonts/Alta_regular.otf");
+  font-family: "Alta";
+}
+
+@font-face {
+  src: url("../assets/fonts/Arimo-Bold.ttf");
+  font-family: "Arimo Bold";
+}
+
+@font-face {
+  src: url("../assets/fonts/Arimo-Medium.ttf");
+  font-family: "Arimo Medium";
+}
+@font-face {
+  src: url("../assets/fonts/Arimo-Regular.ttf");
+  font-family: "Arimo";
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: #e3d2b8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo {
+  font-family: "Alta";
+  font-size: 30px;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.menu-item a {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Arimo Medium";
+  transition: 0.2s;
+  padding-bottom: 2px;
+}
+
+.menu-item a:hover {
+  border-bottom: 1px solid #333;
+}
+
+.about {
+  padding: 100px 0px 50px 0px;
+}
+
+.about-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 120px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 595px;
+}
+
+.fio {
+  font-family: "Arimo Bold";
+  font-style: normal;
+  font-size: 44px;
+  line-height: 60px;
+  color: #161109;
+}
+
+.info p {
+  font-family: "Arimo";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #161109;
+}
+
+.author {
+  width: 283px;
+  height: 283px;
+  border-radius: 50%;
+  background: url(../assets/images/autor.jpg);
+  background-position: 75%;
+  background-size: 130%;
+  box-shadow: -8px 9px 12px 0px #7f7f7f;
+}
+
+.links-material {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.link-material {
+  display: flex;
+  background-color: #ad865d;
+  border-radius: 3px;
+  border: 2px solid #ad865d;
+  transition: 0.5s;
+}
+
+.link-material a {
+  padding: 13px 20px;
+  color: white;
+  font-family: "Arimo Medium";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.link-material:hover {
+  background-color: #fff;
+}
+
+.link-material:hover a {
+  color: #ad865d;
+}
