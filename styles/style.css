@@ -2,6 +2,10 @@ body {
   font-family: "Arimo", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +50,7 @@ a {
 
 .logo {
   font-family: "Alta";
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .header-wrap {
@@ -62,7 +66,7 @@ a {
 }
 
 .menu-item a {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   font-family: "Arimo Medium";
   transition: 0.2s;
@@ -74,14 +78,14 @@ a {
 }
 
 .about {
-  padding: 100px 0px 50px 0px;
+  padding: 100px 0px 70px 0px;
 }
 
 .about-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 120px;
+  padding-right: 100px;
 }
 
 .info {
@@ -102,17 +106,17 @@ a {
 .info p {
   font-family: "Arimo";
   font-style: normal;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 24px;
   color: #161109;
 }
 
 .author {
-  width: 283px;
-  height: 283px;
+  width: 340px;
+  height: 340px;
   border-radius: 50%;
   background: url(../assets/images/autor.jpg);
-  background-position: 75%;
+  background-position: 85%;
   background-size: 130%;
   box-shadow: -8px 9px 12px 0px #7f7f7f;
 }
@@ -135,8 +139,8 @@ a {
   padding: 13px 20px;
   color: white;
   font-family: "Arimo Medium";
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .link-material:hover {
@@ -145,4 +149,81 @@ a {
 
 .link-material:hover a {
   color: #ad865d;
+}
+
+.author-material {
+  padding: 100px 0px 450px 0px;
+  background-color: #e3d2b8;
+}
+
+.material-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.materials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.material {
+  position: relative;
+}
+
+.photo-material {
+  max-width: 360px;
+}
+
+.material-desc {
+  max-width: 360px;
+  position: absolute;
+  right: 0px;
+  background-color: white;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  top: calc(90% - 15px);
+  height: 465px;
+}
+
+.material-desc-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.h-2 {
+  font-family: "Arimo Bold";
+  font-style: normal;
+
+  font-size: 38px;
+  line-height: 44px;
+
+  color: #161109;
+}
+
+.material-name {
+  font-size: 22px;
+  font-family: "Arimo Bold";
+}
+
+.desc-items {
+  font-size: 18px;
+}
+
+.buy-btn {
+  padding: 15px 10px;
+  font-size: 20px;
+  margin-top: auto;
+  display: inline;
+  font-family: "Arimo Medium";
+  font-size: 22px;
 }
