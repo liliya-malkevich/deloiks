@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DELOIKS.BY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -22,10 +23,10 @@
                             <a href="#author-material">Авторский материал</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">Отзывы</a>
+                            <a href="#review">Отзывы</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">Контакты</a>
+                            <a href="#contacts">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -104,8 +105,7 @@
                         <img src="./assets/images/autor.jpg" alt="" class="photo-material">
                         <div class="material-desc">
                             <h3 class="material-name">Общий порядок перевода беременных на лёгкий труд. Алгоритм.
-                                Примеры
-                                документов.</h3>
+                                Примеры документов.</h3>
 
                             <ul class="material-desc-items">
                                 <li class="desc-items">Пункт1 пункт1 пункт1пункт1 пункт1 пункт1</li>
@@ -121,6 +121,36 @@
 
         </div>
     </section>
+    <section class="review" id="review">
+        <div class="container review-container">
+            <div class="review-wrap">
+                <h2 class="h-2">Что говорят об авторе и блоге deloiks.by</h2>
+                <div class="swiper">
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/images/review/review1.jpg" alt="отзыв"></div>
+                        <div class="swiper-slide"><img src="./assets/images/review/review2.jpg" alt="отзыв"></div>
+                        <div class="swiper-slide"><img src="./assets/images/review/review3.jpg" alt="отзыв"></div>
+                        <div class="swiper-slide"><img src="./assets/images/review/review4.jpg" alt="отзыв"></div>
+                        <div class="swiper-slide"><img src="./assets/images/review/review5.jpg" alt="отзыв"></div>
+                        <div class="swiper-slide"><img src="./assets/images/review/review6.jpg" alt="отзыв"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
