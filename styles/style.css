@@ -51,6 +51,9 @@ a {
 .logo {
   font-family: "Alta";
   font-size: 32px;
+  background-color: #fff;
+  padding: 0px 5px 0 5px;
+  border-radius: 3px;
 }
 
 .header-wrap {
@@ -65,12 +68,18 @@ a {
   list-style: none;
 }
 
+.menu-item {
+  background-color: #fff;
+  padding: 0px 5px 0 5px;
+  border-radius: 3px;
+}
+
 .menu-item a {
   font-size: 20px;
   line-height: 30px;
   font-family: "Arimo Medium";
   transition: 0.2s;
-  padding-bottom: 2px;
+  padding-bottom: 1px;
 }
 
 .menu-item a:hover {
@@ -129,26 +138,25 @@ a {
 
 .link-material {
   display: flex;
-  background-color: #ad865d;
+  background-color: #fff;
   border-radius: 3px;
-  border: 2px solid #ad865d;
+  border: 3px solid #ad865d;
   transition: 0.5s;
 }
 
 .link-material a {
   padding: 13px 20px;
-  color: white;
+  color: #ad865d;
   font-family: "Arimo Medium";
   font-size: 22px;
   line-height: 26px;
 }
 
 .link-material:hover {
-  background-color: #fff;
+  box-shadow: 0px 1px 12px 0px #454545;
 }
 
 .link-material:hover a {
-  color: #ad865d;
 }
 
 .author-material {
@@ -170,6 +178,9 @@ a {
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 440px;
+  justify-content: space-evenly;
 }
 
 .material {
@@ -191,12 +202,12 @@ a {
   position: absolute;
   right: 0px;
   background-color: white;
-  padding: 18px;
+  padding: 15px 18px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
   top: calc(90% - 15px);
-  height: 465px;
+  height: 450px;
 }
 
 .material-desc-items {
@@ -230,8 +241,8 @@ a {
   font-size: 20px;
   margin-top: auto;
   display: inline;
-  font-family: "Arimo Medium";
-  font-size: 22px;
+  font-family: "Arimo Bold";
+  font-size: 24px;
   cursor: pointer;
 }
 
@@ -265,6 +276,7 @@ a {
 .swiper-slide {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .review-wrap {
   text-align: center;
@@ -298,4 +310,36 @@ a {
 .swiper-button-prev:hover {
   background-color: #ad865d;
   color: #fff;
+}
+
+.footer {
+  padding: 60px 0 60px 0;
+  background-color: #e3d2b8;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  width: 30%;
+  padding: 30px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-radius: 3px;
+}
+
+.inst,
+.mail {
+  font-size: 24px;
+}
+
+.ip-text {
+  line-height: 1.3;
 }
