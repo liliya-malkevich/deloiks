@@ -343,3 +343,16 @@ a {
 .ip-text {
   line-height: 1.3;
 }
+
+.burger-menu {
+  flex-direction: column;
+  gap: 5px;
+  display: none;
+}
+
+.burger-menu div {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 3px;
+}

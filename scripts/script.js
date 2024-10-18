@@ -24,3 +24,13 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+const burgerMenu = document.getElementById("burger-menu");
+const menu = document.getElementById("menu");
+burgerMenu.addEventListener("click", () => {
+  menu.classList.toggle("open");
+});
+
+// if(menu.classList.contains("open")) {
+
+// }
