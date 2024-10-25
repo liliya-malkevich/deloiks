@@ -88,6 +88,7 @@ a {
 
 .about {
   padding: 100px 0px 70px 0px;
+  background-color: #fffcf9;
 }
 
 .about-wrap {
@@ -100,7 +101,7 @@ a {
 .info {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   max-width: 595px;
 }
 
@@ -108,7 +109,7 @@ a {
   font-family: "Arimo Bold";
   font-style: normal;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 70px;
   color: #161109;
 }
 
@@ -121,8 +122,8 @@ a {
 }
 
 .author {
-  width: 340px;
-  height: 340px;
+  width: 385px;
+  height: 385px;
   border-radius: 50%;
   background: url(../assets/images/autor.jpg);
   background-position: 85%;
@@ -156,7 +157,236 @@ a {
   box-shadow: 0px 1px 12px 0px #454545;
 }
 
-.link-material:hover a {
+.about-course {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background-color: #fffcf9;
+}
+
+.about-course-wrap {
+  background-color: #cca890;
+  padding: 90px 40px;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 40px;
+  gap: 80px;
+}
+
+.invate {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.invate h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.author-name {
+  font-size: 28px;
+}
+
+.course-name {
+  font-size: 32px;
+}
+
+.invate-text {
+  font-size: 22px;
+}
+
+.course-info {
+  font-size: 28px;
+  font-family: "Arimo Medium";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 35px;
+  padding: 40px 25px 40px 25px;
+  background-color: #fffcf9;
+  border-radius: 10px;
+}
+
+.course-items {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+}
+
+.course-info button {
+  margin-top: 0px;
+}
+
+.for-whom {
+  padding: 100px 0px 200px 0px;
+  background-color: #e3d2b8;
+}
+
+.for-whom-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+}
+
+.for-whom-items {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.for-whom-item {
+  background-image: url(../assets/svg/done-round-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: left -10px;
+  padding-left: 60px;
+  line-height: 30px;
+  font-size: 22px;
+  max-width: 550px;
+}
+
+.highlight {
+  max-width: 720px;
+  background-color: #ffffff;
+  padding: 30px 30px 30px 40px;
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 24px;
+  border: 2px solid #161109;
+  bottom: -460px;
+  right: 0;
+}
+
+.highlight-items {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.highlight img {
+  width: 80px;
+  position: absolute;
+  top: -55px;
+  right: 35px;
+}
+
+.highlight h3 {
+  font-size: 24px;
+  font-family: cursive;
+}
+
+.highlight li {
+  font-size: 20px;
+}
+
+.for-whom .container {
+  position: relative;
+}
+
+.programm {
+  padding: 335px 0 100px 0;
+  background-color: #fffcf9;
+}
+
+.programm .container {
+  position: relative;
+}
+
+.programm-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.programm-head {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.programm-head p {
+  font-size: 21px;
+  position: absolute;
+  top: -145px;
+  max-width: 342px;
+}
+
+.thema-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 41px;
+  grid-column-gap: 40px;
+}
+
+.thema-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.thema-item h4 {
+  font-size: 20px;
+}
+
+.thema-desc {
+  list-style: inside;
+  list-style-image: url(../assets/svg/arrow-right-svgrepo-com.svg);
+}
+
+.thema-desc li {
+  font-size: 18px;
+}
+
+.learn {
+  padding: 100px 0;
+  background-color: #cca890;
+}
+
+.learn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.learn-items {
+  display: flex;
+
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.learn-item {
+  max-width: 375px;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.learn-item img {
+  max-width: 60px;
+  margin-bottom: 20px;
+}
+
+.learn-item p {
+  font-size: 19px;
+  font-family: "Arimo Medium";
+  text-align: center;
 }
 
 .author-material {
@@ -169,7 +399,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
 }
 
 .materials {
@@ -220,10 +450,8 @@ a {
 .h-2 {
   font-family: "Arimo Bold";
   font-style: normal;
-
   font-size: 38px;
   line-height: 44px;
-
   color: #161109;
 }
 
