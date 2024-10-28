@@ -35,6 +35,10 @@ a {
   src: url("../assets/fonts/Arimo-Regular.ttf");
   font-family: "Arimo";
 }
+@font-face {
+  src: url("../assets/fonts/MontserratAlternates-SemiBoldItalic.ttf");
+  font-family: "MontserratBI";
+}
 
 .container {
   max-width: 1200px;
@@ -105,6 +109,15 @@ a {
   max-width: 595px;
 }
 
+.info p:last-child {
+  border: 2px solid #161109;
+  padding: 30px 20px 20px 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+
 .fio {
   font-family: "Arimo Bold";
   font-style: normal;
@@ -170,6 +183,21 @@ a {
   justify-content: flex-start;
   border-radius: 40px;
   gap: 80px;
+}
+
+.right-attach,
+.left-attach {
+  position: absolute;
+  top: -55px;
+}
+
+.right-attach {
+  right: -35px;
+  transform: rotate(90deg);
+}
+
+.left-attach {
+  left: -35px;
 }
 
 .invate {
@@ -305,20 +333,25 @@ a {
 .programm-wrap {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 50px;
 }
 
 .programm-head {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
+  align-items: center;
 }
 
 .programm-head p {
   font-size: 21px;
-  position: absolute;
-  top: -145px;
-  max-width: 342px;
+}
+
+.programm-head .h-2,
+.faq .h-2 {
+  border-bottom: 3px solid #ad865d;
+  padding: 10px 20px;
+  border-radius: 3px;
 }
 
 .thema-items {
@@ -389,6 +422,62 @@ a {
   text-align: center;
 }
 
+.format {
+  padding: 50px 0 100px 0;
+  background-color: #fffcf9;
+}
+
+.format-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.format-item .h-3 {
+  font-family: cursive;
+  font-size: 25px;
+}
+
+.format-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #e3d2b8;
+  padding: 30px 40px;
+  border-radius: 40px;
+  max-width: 690px;
+  align-items: center;
+}
+
+.format-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+.format-list li {
+  font-size: 20px;
+  background-image: url(../assets/svg/done-round-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: left -10px;
+  min-height: 35px;
+  padding-left: 55px;
+  line-height: 30px;
+  background-size: 45px;
+}
+
+.price {
+  font-family: "Arimo Bold";
+  font-size: 24px;
+}
+
+.limited {
+  font-family: "Arimo Medium";
+  font-size: 18px;
+}
+
 .author-material {
   padding: 100px 0px 450px 0px;
   background-color: #e3d2b8;
@@ -453,6 +542,7 @@ a {
   font-size: 38px;
   line-height: 44px;
   color: #161109;
+  text-align: center;
 }
 
 .material-name {
@@ -583,4 +673,106 @@ a {
   height: 5px;
   background-color: #fff;
   border-radius: 3px;
+}
+
+.faq {
+  padding: 100px 0;
+  background-color: #fffcf9;
+}
+
+.faq-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded="true"] {
+  border-bottom: 1px solid #ad865d;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #161109;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #ad865d;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #ad865d;
+  border: 1px solid #ad865d;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+  font-family: "Arimo Medium";
+  font-size: 22px;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded="true"] {
+  color: #ad865d;
+}
+.accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 28em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 2em 0;
 }
