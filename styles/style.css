@@ -95,11 +95,16 @@ a {
   background-color: #fffcf9;
 }
 
+.about .container {
+  padding: 0 35px;
+}
+
 .about-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 100px;
+  gap: 20px;
+  /* padding-right: 100px; */
 }
 
 .info {
@@ -180,9 +185,9 @@ a {
   background-color: #cca890;
   padding: 90px 40px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   border-radius: 40px;
-  gap: 80px;
+ 
 }
 
 .right-attach,
@@ -394,7 +399,7 @@ a {
 
 .learn-items {
   display: flex;
-
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -423,7 +428,7 @@ a {
 }
 
 .format {
-  padding: 50px 0 100px 0;
+  padding: 50px 0 30px 0;
   background-color: #fffcf9;
 }
 
@@ -772,7 +777,7 @@ a {
   will-change: opacity, max-height;
 }
 .accordion .accordion-content p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 300;
   margin: 2em 0;
 }

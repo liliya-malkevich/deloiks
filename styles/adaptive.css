@@ -2,6 +2,23 @@
   .about-wrap {
     padding-right: 0;
   }
+  .about-course-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .invate {
+    max-width: 750px;
+  }
+
+  .invate h2 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .course-info {
+    padding: 40px 60px 40px 60px;
+  }
 }
 
 @media (max-width: 990px) {
