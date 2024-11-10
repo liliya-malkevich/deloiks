@@ -95,11 +95,16 @@ a {
   background-color: #fffcf9;
 }
 
+.about .container {
+  padding: 0 35px;
+}
+
 .about-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 100px;
+  gap: 20px;
+  /* padding-right: 100px; */
 }
 
 .info {
@@ -180,9 +185,9 @@ a {
   background-color: #cca890;
   padding: 90px 40px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   border-radius: 40px;
-  gap: 80px;
+ 
 }
 
 .right-attach,
@@ -394,7 +399,7 @@ a {
 
 .learn-items {
   display: flex;
-
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -423,7 +428,7 @@ a {
 }
 
 .format {
-  padding: 50px 0 100px 0;
+  padding: 50px 0 30px 0;
   background-color: #fffcf9;
 }
 
@@ -479,7 +484,7 @@ a {
 }
 
 .author-material {
-  padding: 100px 0px 450px 0px;
+  padding: 100px 0px 300px 0px;
   background-color: #e3d2b8;
 }
 
@@ -498,7 +503,7 @@ a {
   width: 100%;
   flex-wrap: wrap;
   column-gap: 10px;
-  row-gap: 440px;
+  row-gap: 300px;
   justify-content: space-evenly;
 }
 
@@ -514,6 +519,8 @@ a {
 
 .photo-material {
   max-width: 360px;
+  height: 240px;
+  border-radius: 10px;
 }
 
 .material-desc {
@@ -524,9 +531,11 @@ a {
   padding: 15px 18px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   top: calc(90% - 15px);
-  height: 450px;
+  height: 280px;
+  align-items: center;
+  border-radius: 0 0px 10px 10px;
 }
 
 .material-desc-items {
@@ -548,6 +557,7 @@ a {
 .material-name {
   font-size: 22px;
   font-family: "Arimo Bold";
+  min-height: 102px;
 }
 
 .desc-items {
@@ -555,7 +565,7 @@ a {
 }
 
 .buy-btn {
-  padding: 15px 10px;
+  padding: 15px 15px;
   font-size: 20px;
   margin-top: auto;
   display: inline;
@@ -772,7 +782,7 @@ a {
   will-change: opacity, max-height;
 }
 .accordion .accordion-content p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 300;
   margin: 2em 0;
 }
