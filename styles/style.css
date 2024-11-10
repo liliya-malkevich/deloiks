@@ -484,7 +484,7 @@ a {
 }
 
 .author-material {
-  padding: 100px 0px 450px 0px;
+  padding: 100px 0px 300px 0px;
   background-color: #e3d2b8;
 }
 
@@ -503,7 +503,7 @@ a {
   width: 100%;
   flex-wrap: wrap;
   column-gap: 10px;
-  row-gap: 440px;
+  row-gap: 300px;
   justify-content: space-evenly;
 }
 
@@ -519,6 +519,8 @@ a {
 
 .photo-material {
   max-width: 360px;
+  height: 240px;
+  border-radius: 10px;
 }
 
 .material-desc {
@@ -529,9 +531,11 @@ a {
   padding: 15px 18px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   top: calc(90% - 15px);
-  height: 450px;
+  height: 280px;
+  align-items: center;
+  border-radius: 0 0px 10px 10px;
 }
 
 .material-desc-items {
@@ -553,6 +557,7 @@ a {
 .material-name {
   font-size: 22px;
   font-family: "Arimo Bold";
+  min-height: 102px;
 }
 
 .desc-items {
@@ -560,7 +565,7 @@ a {
 }
 
 .buy-btn {
-  padding: 15px 10px;
+  padding: 15px 15px;
   font-size: 20px;
   margin-top: auto;
   display: inline;
