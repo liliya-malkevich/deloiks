@@ -206,7 +206,7 @@ a {
 }
 
 .invate {
-  max-width: 550px;
+  max-width: 610px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -223,11 +223,11 @@ a {
 }
 
 .course-name {
-  font-size: 32px;
+  font-size: 29px;
 }
 
 .invate-text {
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .course-info {
