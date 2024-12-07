@@ -538,6 +538,11 @@ a {
   border-radius: 0 0px 10px 10px;
 }
 
+.material-desc .link-material a {
+  color: #161109;
+  font-family: "Arimo Bold";
+}
+
 .material-desc-items {
   list-style: none;
   display: flex;
